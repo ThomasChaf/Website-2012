@@ -1,0 +1,10 @@
+<?php 
+$this->begin();
+?>
+<link href='style/colorPicker.css' rel="stylesheet" type="text/css">
+
+<div class="colorPicker"></div>
+
+<?php
+$this->footer();
+?>

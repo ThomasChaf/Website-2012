@@ -1,0 +1,56 @@
+@CHARSET "UTF-8";
+
+.center
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+}
+
+.picker {
+	width: 512px;
+	height: 492px;
+}
+
+.pixmap {
+	width: 162px;
+ 	height: 492px;
+}
+
+.datas {
+	width: 24%;
+		
+}
+
+#color {
+	display: block;
+	width: 100%;
+}
+
+div.input {
+	width: 100%;
+	height: 280px;
+	display: inline-block;
+	margin: 10px;
+}
+
+div.input p {
+	margin: 0px 0px 20px 0px;
+	height: 53px;
+	position: relative;
+	width: 100%;
+}
+
+div.input p strong {
+	position: absolute;
+	top: 5px;
+	left: 10%;
+}
+
+div.input input {
+	heigth: auto;
+	width: 45%;
+	float: right;
+	margin-right: 7%;
+	text-align: center;
+}
