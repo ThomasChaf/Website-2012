@@ -24,4 +24,14 @@ class mainControlleur {
 		include "class/codinGameView.php";
 		return new codinGameView("codinGameView.php");
 	}
+
+	public function raytracer() {
+		include "class/raytracerView.php";
+		return new raytracerView("raytracerView.php");
+	}
+
+	public function shell42() {
+		include "class/shell42View.php";
+		return new shell42View("shell42View.php");
+	}
 }

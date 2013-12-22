@@ -276,14 +276,6 @@ table {
   }
 }
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 input,
 button,
 select,
@@ -4160,7 +4152,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   margin: 15px;
-  font-size: 3.3rem;
+  font-size: 2.3rem;
   line-height: 20px;
 }
 
@@ -4213,7 +4205,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 2.6rem;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 @media (max-width: 767px) {

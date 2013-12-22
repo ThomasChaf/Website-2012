@@ -1,5 +1,14 @@
 @CHARSET "UTF-8";
 
+::-moz-selection {
+	background: #EB5959;
+	color: white;
+}
+::selection {
+	background: #EB5959;
+	color:white;
+}
+
 div#header {
 	background: #555555;
 	width:auto;
@@ -21,6 +30,15 @@ body {
 	height:auto;
 }
 
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.t-center {
+	text-align: center;
+}
+
 div#firstName {
 	width: 720px;
 	height: 210px;
@@ -33,29 +51,6 @@ div#menu {
 	height: 40px;
 }
 
-/*
-ul {
-	margin: 0;
-}
-
-li.main {
-	padding: 15px;
-	display: inline;
-	width: 300px;
-	float: left;
-}
-
-li.main ul.menu {
-	padding: 0;
-	display: none;
-}
-
-li.main:hover ul.menu {
-	padding: 0;
-	display: block;
-	position: absolute;
-}
-*/
 a.sub {
 	text-decoration: none;
 	background: #7BDCE9;
@@ -68,8 +63,21 @@ input.logo {
 	height:53px;
 }
 
+.resauxSociaux, .basiqueInformations {
+	color: #FFF;
+	padding: 10px;
+}
+
+.resauxSociaux * {
+	margin: 10px;
+}
+
 input.facebook {
 	background-image: url(../images/logo-facebook.gif);
+}
+
+input.twitter {
+	background-image: url(../images/logo-twitter.jpg);
 }
 
 input.google-plus {
@@ -88,124 +96,4 @@ div.center div {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-}
-
-/* SLIDER STRUCTURE */
-
-#slider {
-    height: 312px;
-    width: 40%;
-    margin: auto;
-    overflow: visible;
-    position: relative;
-}
-
-#slider a {
-    margin-top: 25%;
-	margin-bottom: 25%;
-}
-
-#mask {
-   overflow: hidden;
-   height: 300px;
-}
-
-#slider ul {
-   margin: 0;
-   padding: 0;
-   position: relative;
-}
-
-#slider li { 
-   width: 100%;  /* Width Image */
-   height: 300px; /* Height Image */
-   position: absolute;
-   top: -325px;	/* Original Position - Outside of the Slider */
-   list-style: none;
-}
-
-#slider li.firstanimation {
-   -webkit-animation: cycle 25s ease-out infinite;		
-}
-
-#slider li.secondanimation {
-   -webkit-animation: cycletwo 25s ease-out infinite;	
-}
-
-#slider li.thirdanimation {
-   -webkit-animation: cyclethree 25s ease-out infinite;		
-}
-
-#slider li.fourthanimation {
-	-webkit-animation: cyclefour 25s ease-out infinite;		
-}
-
-@-webkit-keyframes cycle {
-   0%  { top: 0px; } /* When you start the slide, the first image is already visible */
-   4%  { top: 0px; } /* Original Position */
-   16% { top: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
-   20% { top: 325px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
-   21% { top: -325px; opacity: 0; z-index: -1; } /* Return to Original Position */
-   92% { top: -325px; opacity: 0; z-index: 0; }
-   96% { top: -325px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
-   100%{ top: 0px; opacity: 1; }
-}
-
-@-webkit-keyframes cycletwo {
-   0%  { top: -325px; opacity: 0; } /* Original Position */
-   16% { top: -325px; opacity: 0; }/* Starts moving after 16% to this position */
-   20% { top: 0px; opacity: 1; }
-   24% { top: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
-   36% { top: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
-   40% { top: 325px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
-   41% { top: -325px; opacity: 0; z-index: -1; }   /* Return to Original Position */
-   100%{ top: -325px; opacity: 0; z-index: -1; }
-}
-
-@-webkit-keyframes cyclethree {
-   0%  { top: -325px; opacity: 0; }
-   36% { top: -325px; opacity: 0; }
-   40% { top: 0px; opacity: 1; }
-   44% { top: 0px; opacity: 1; } 
-   56% { top: 0px; opacity: 1; } 
-   60% { top: 325px; opacity: 0; z-index: 0; }
-   61% { top: -325px; opacity: 0; z-index: -1; } 
-   100%{ top: -325px; opacity: 0; z-index: -1; }
-}
-
-@-webkit-keyframes cyclefour {
-   0%  { top: -325px; opacity: 0; }
-   56% { top: -325px; opacity: 0; }
-   60% { top: 0px; opacity: 1; }
-   64% { top: 0px; opacity: 1; }
-   76% { top: 0px; opacity: 1; z-index: 0; }
-   80% { top: 325px; opacity: 0; z-index: 0; }
-   81% { top: -325px; opacity: 0; z-index: -1; }
-   100%{ top: -325px; opacity: 0; z-index: -1; }
-}
-
-div.progress-bar { 
-	position: relative;
-	top: -15px;
-	width: 680px; 
-	height: 15px;
-	background: #DD0000;
-	animation: fullexpand 25s ease-out infinite;
-	-webkit-animation: fullexpand 25s ease-out infinite; 
-}
-
-@keyframes fullexpand {
-   0%, 20%, 40%, 60%, 80%, 100% {width: 0%;	  opacity: 0;	}
-   4%, 24%, 44%, 64%, 84% 		{width: 0%;   opacity: 0.3; }
-  16%, 36%, 56%, 76%, 96% 		{width: 100%; opacity: 0.7; }
-  17%, 37%, 57%, 77%, 97% 		{width: 100%; opacity: 0.3; }
-  18%, 38%, 58%, 78%, 98% 		{width: 100%; opacity: 0;	}
-}
-
-@-webkit-keyframes fullexpand {
-   0%, 20%, 40%, 60%, 80%, 100% {width: 0%;	  opacity: 0;	}
-   4%, 24%, 44%, 64%, 84% 		{width: 0%;   opacity: 0.3; }
-  16%, 36%, 56%, 76%, 96% 		{width: 100%; opacity: 0.7; }
-  17%, 37%, 57%, 77%, 97% 		{width: 100%; opacity: 0.3; }
-  18%, 38%, 58%, 78%, 98% 		{width: 100%; opacity: 0;	}
 }

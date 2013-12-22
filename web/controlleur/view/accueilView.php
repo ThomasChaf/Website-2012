@@ -1,18 +1,20 @@
 <?php
+$this->addCSS("slider.css");
 $this->begin();
 ?>
 <div class="container">
-	I'm Thomas, a software developer student and this is my web site.
+	Je m'appelle Thomas, j'ai 19 ans.<br>
+	Voici mes projets.
 </div>
 <div id="slider" class="border">
 	<div id="mask">
 		<ul>
 			<li id="first" class="firstanimation">
-				<a href=""> <img src="images/baniereEpitech.jpg" width="100%" height="100%" alt="Cougar"/></a>
+				<a href=""> <img src="images/baniereEpitech.jpg" width="100%" height="100%" alt="Logos d'epitech"/></a>
 				<div class="tooltip"> <h1>Cougar</h1> </div>
 			</li>
 			<li id="second" class="secondanimation">
-				<a href=""> <img src="images/fruition.png" width="60%" height="60%" alt="Lions"/> </a>
+				<a href=""> <img src="images/fruition.png" width="100%" height="100%" alt="Logos de fruitions"/> </a>
 				<div class="tooltip"> <h1>Lions</h1> </div>
 			</li>
 			<li id="third" class="thirdanimation">

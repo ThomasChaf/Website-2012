@@ -9,6 +9,9 @@
 		<title>Thomas Chafiol</title>
 		<!-- Bootstrap core CSS -->
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+		<?php foreach ($this->_cssFile as $cssFile) {
+			echo "<link href=\"style/" . $cssFile . "\" rel=\"stylesheet\">";
+		} ?>
 		<link href="style/bootstrap.css" rel="stylesheet">
 		<link href='style/index.css' rel="stylesheet" type="text/css">
 
@@ -32,18 +35,20 @@
 			  	</div>
 			  	<div class="navbar-collapse collapse">
 			  		<ul class="nav navbar-nav">
-			  			<li><a href="#about">About</a></li>
-			  			<li><a href="#contact">Contact</a></li>
+			  			<li><a href="about">About</a></li>
+			  			<li><a href="contact">Contact</a></li>
 			  			<li class="dropdown">
-			  				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+			  				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
 			  				<ul class="dropdown-menu">
-			  					<li><a href="#">Action</a></li>
-			  					<li><a href="#">Another action</a></li>
-			  					<li><a href="#">Something else here</a></li>
+			  					<li><a href="raytracer">Raytracer</a></li>
+			  					<li><a href="42sh">42sh</a></li>
+<!-- 
+ 			  					<li><a href="#">Something else here</a></li>
 			  					<li class="divider"></li>
 			  					<li class="dropdown-header">Nav header</li>
 			  					<li><a href="#">Separated link</a></li>
 			  					<li><a href="#">One more separated link</a></li>
+ -->
 			  				</ul>
 				        </li>
 				    </ul>
