@@ -9,22 +9,19 @@
 		<title>Thomas Chafiol</title>
 		<!-- Bootstrap core CSS -->
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+		<link href='style/font-awesome.min.css' rel='stylesheet' type='text/css'>
 		<?php foreach ($this->_cssFile as $cssFile) {
 			echo "<link href=\"style/" . $cssFile . "\" rel=\"stylesheet\">";
 		} ?>
-		<link href="style/bootstrap.css" rel="stylesheet">
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 		<link href='style/index.css' rel="stylesheet" type="text/css">
+		<link href='style/footer.css' rel="stylesheet" type="text/css">
 
 		<script type="text/javascript" src="script/jQuery.js"></script>
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-		<script src="../../assets/js/html5shiv.js"></script>
-		<script src="../../assets/js/respond.min.js"></script>
-		<![endif]-->
 	</head>
 	<body bgcolor=#ddd>
 		<div class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container" style="margin-left: 10%">
+			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="icon-bar"></span>
@@ -35,24 +32,21 @@
 			  	</div>
 			  	<div class="navbar-collapse collapse">
 			  		<ul class="nav navbar-nav">
-			  			<li><a href="about">About</a></li>
-			  			<li><a href="contact">Contact</a></li>
+							<li><a href="about">A propos</a></li>
 			  			<li class="dropdown">
 			  				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
 			  				<ul class="dropdown-menu">
+			  					<li class="dropdown-header">A Epitech</li>
 			  					<li><a href="raytracer">Raytracer</a></li>
-			  					<li><a href="42sh">42sh</a></li>
-<!-- 
- 			  					<li><a href="#">Something else here</a></li>
+			  					<li><a href="shell42">42sh</a></li>
 			  					<li class="divider"></li>
-			  					<li class="dropdown-header">Nav header</li>
-			  					<li><a href="#">Separated link</a></li>
-			  					<li><a href="#">One more separated link</a></li>
- -->
+			  					<li class="dropdown-header">En dehors de l'école</li>
+			  					<li><a href="colorPicker">Colorpicker</a></li>
+			  					<li><a href="codinGame">CodinGame</a></li>
 			  				</ul>
 				        </li>
 				    </ul>
 				</div> <!--/.navbar-collapse -->
 			</div>
 		</div>
-	<div id="body" class="jumbotron">
+		<div class="margin-header"></div><!-- ./margin -->

@@ -1,19 +1,7 @@
-		</div>
 		<footer>
-			<div class="basiqueInformations">
+			<div>
 				<p>Thomas Chafiol</p>
-				<p>34000 Montpellier</p>
-			</div>
-			<div class="resauxSociaux">
-				<a href="https://plus.google.com/u/0/108744819722613144115/posts" target="_blank">
-					<input class="logo google-plus" type="button">
-				</a>
-				<a href="https://twitter.com/ThomasChaf" target="_blank">
-					<input class="logo twitter" type="button">
-				</a>
-				<a href="https://www.facebook.com/thomas.chafiol.1" target="_blank">
-					<input class="logo facebook" type="button">
-				</a>
+				<p>&copy; 2014 site personnel</p>
 			</div>
 		</footer>
 	<script type="text/javascript" src="script/bootstrap.min.js"></script>

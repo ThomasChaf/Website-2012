@@ -3237,7 +3237,7 @@ input[type="button"].btn-block {
 .dropdown-menu > li > a:focus {
   color: #ffffff;
   text-decoration: none;
-  background-color: #428bca;
+  background-color: #607574;
 }
 
 .dropdown-menu > .active > a,
@@ -4462,7 +4462,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-inverse {
   background-repeat: repeat-x;
-  background-image: url(../images/Baniere.jpg);
   background-color: #222222;
   border-color: #080808;
 }

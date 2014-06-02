@@ -1,0 +1,33 @@
+.baner {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #b8cfde;
+  color: #3c3939;
+}
+.description {
+  text-align: center;
+  font-size: 1.7rem;
+}
+.social {
+  text-align: center;
+}
+.social a {
+  font-size: 1.7rem;
+  background-color: #fff;
+  color: #8e9190;
+  border: 2px solid #8e9190;
+  padding: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.social a:hover {
+  color: #8e9190;
+  background-color: #eee;
+  border: 2px solid #6E7170;
+  text-decoration: none;
+}
+.social a:last-child {
+  margin-right: 0;
+}

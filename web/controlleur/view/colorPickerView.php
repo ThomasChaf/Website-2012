@@ -2,24 +2,31 @@
 $this->begin();
 ?>
 <link href='style/colorPicker.css' rel="stylesheet" type="text/css">
-
-<div class="center">
-	<div class="border picker">
-		<canvas id="picker" width="500px" height="480px"></canvas>
-	</div>
-	<div class="border pixmap">
-		<canvas id="pixMap" width="150px" height="480px"></canvas>
-	</div>
-	<div class="datas">
-		<div id="input" class="input">
-			<p id="hexa" class="border"><strong>HEXA</strong><input id="hh" type="text" class="form-control"></input></p>
-			<p id="red" class="border"><strong>RED</strong><input id="rr" type="text" class="form-control"></input></p>
-			<p id="green" class="border"><strong>GREEN</strong><input id="gg" type="text" class="form-control"></input></p>
-			<p id="blue" class="border"><strong>BLUE</strong><input id="bb" type="text" class="form-control"></input></p>
+<hr class="container">
+<section class="container">
+	<div class="row">
+		<div class="col-md-5">
+			<div class="picker border">
+				<canvas id="picker" width="500px" height="480px"></canvas>
+			</div>
 		</div>
-		<canvas id="color" class="border"></canvas>
+		<div class="col-md-2 col-md-offset-1">
+			<div class="pixmap border">
+				<canvas id="pixMap" width="150px" height="480px"></canvas>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div id="input" class="input">
+				<div id="hexa" class="border"><strong>HEXA</strong><input id="hh" type="text" class="form-control"></input></div>
+				<div id="red" class="border"><strong>RED</strong><input id="rr" type="text" class="form-control"></input></div>
+				<div id="green" class="border"><strong>GREEN</strong><input id="gg" type="text" class="form-control"></input></div>
+				<div id="blue" class="border"><strong>BLUE</strong><input id="bb" type="text" class="form-control"></input></div>
+			</div>
+			<canvas id="color" class="border"></canvas>
+		</div>
 	</div>
-</div>
+</section>
+<hr class="container">
 
 <script type="text/javascript" src="script/image.js"></script>
 <script type="text/javascript" src="script/colorPicker.js"></script>
@@ -27,7 +34,7 @@ $this->begin();
 var color = new ColorPicker(document.getElementById("pixMap"),
 							document.getElementById("picker"),
 							document.getElementById("color"),
-							jQuery("#input p input"));
+							jQuery("#input input"));
 
 jQuery(document).ready(function(){
 	color.gradient(color.imageGradient, 255, 0, 0);
@@ -44,7 +51,7 @@ jQuery("canvas#pixMap").click(function(evt) {
 	color.imageGradient.putImageData(0, 0);
 })
 
-jQuery("#input p input").change(function(evt) {
+jQuery("#input input").change(function(evt) {
 	if (evt.target.id == "hh") {
 		var newColor = color.colorInRgb(evt.target.value);
 	} else {

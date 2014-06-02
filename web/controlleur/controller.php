@@ -9,6 +9,10 @@ class controlleur
 
 	private $_controlleur = null;
 
+	/**
+	 * TODO mettre /web/ dans un fichier de conf
+	 * @param string $url
+	 */
 	function __construct($url) {
 		$this->_url = $url;
 		if ($method = substr($url, strlen("/web/"))) {
@@ -32,6 +36,7 @@ class controlleur
 			$method = $this->_methods;
 			$view = $this->_controlleur->$method();
 		} else {
+			header("HTTP/1.1 404 Not Found");
 			$view = $this->_controlleur->errorView();
 		}
 		$view->show();

@@ -1,0 +1,44 @@
+@grey                       : #8E9190;
+@blue                       : #B8CFDE;
+@black                      : #3C3939;
+@font-size                  : 1.7rem;
+
+.baner
+{
+  padding-top               : 40px;
+  padding-bottom            : 40px;
+  background-color          : @blue;
+  color                     : @black;
+}
+
+.description {
+  text-align                : center;
+  font-size                 : @font-size;
+}
+
+.social {
+  text-align: center;
+  a
+  {
+    font-size               : @font-size;
+    background-color        : #fff;
+    color                   : @grey;
+    border                  : 2px solid @grey;
+    padding                 : 20px;
+    -webkit-border-radius   : 50%;
+    -moz-border-radius      : 50%;
+    border-radius           : 50%;
+    margin-right            : 30px;
+    &:hover
+    {
+      color                 : @grey;
+      background-color      : #eee;
+      border                : 2px solid #6E7170;
+      text-decoration       : none;
+    }
+    &:last-child
+    {
+      margin-right          : 0;
+    }
+  }
+}
