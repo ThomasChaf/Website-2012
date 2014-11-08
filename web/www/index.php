@@ -1,5 +1,6 @@
 <?php
-require '../controlleur/controller.php';
-$controlleur = new controlleur($_SERVER['REQUEST_URI']);
-$controlleur->start();
-?>	
+require '../app/controller.php';
+$controlleur = new Controller();
+$controlleur->parseUrl();
+$controlleur->process();
+?>

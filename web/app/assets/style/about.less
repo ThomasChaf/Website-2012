@@ -1,0 +1,85 @@
+// ****************************************************************************
+//                                                                            *
+//                                 ABOUT LESS                                 *
+//                                                                            *
+// Created by Thomas Chafiol  -  thomaschaf@gmail.com  -  22  /  11  /  2013  *
+// ****************************************************************************
+
+@import "index.less";
+
+.resume
+{
+  padding               : 30px 30px 30px 30px;
+  text-align            : justify;
+  font-size             : 1.7rem;
+  border                : 1px solid;
+  border-radius         : 10px;
+  margin-top            : 20px;
+  font-style            : italic;
+}
+
+.cv
+{
+  font-size             : @font-size;
+  padding-top           : 40px;
+  padding-bottom        : 40px;
+  background-color      : @blue;
+  color                 : @black;
+  text-align            : center;
+  a
+  {
+    border              : 2px solid @black;
+    padding             : 20px;
+    border-radius       : 10px;
+    background-color    : white;
+    color               : @black;
+    &:hover
+    {
+      color             : @grey;
+      border            : 2px solid @grey;
+      text-decoration   : none;
+    }
+  }
+}
+
+.competences
+{
+  color                 : @black;
+  text-align            : center;
+  span
+  {
+    position            : absolute;
+    top                 : 33%;
+    font-size           : 2.4rem;
+    left                : 41%;
+  }
+}
+
+.canvas-rounded
+{
+  width                 : 260px;
+  height                : 150px;
+}
+
+.self-picture
+{
+  padding               : 20px;
+  img
+  {
+    border              : solid 4px @blue;
+    padding             : 3px;
+    border-radius       : 6px;
+  }
+}
+
+.right
+{
+  padding-top           : 30px;
+  text-align            : right;
+}
+
+.left
+{
+  padding-top           : 30px;
+  text-align            : left;
+}
