@@ -1,0 +1,23 @@
+{
+  "resume1" :
+    "Actuellement pleinement investi dans mes études en informatique,
+    je suis un développeur passionné par ce qui touche au monde de
+    la programmation. Mon sérieux me permet de m’adapter et d’être
+    efficace sur des technologies nouvelles.",
+  "resume2" :
+    "Volontaire et motivé, j’aime aller de l’avant afin de me
+    donner les moyens de réussir. J’aime valoriser mon travail,
+    me sentir utile et donner de la valeur à ce que je façonne.",
+  "resume3" :
+    "Je tire mes plus beaux souvenirs de mes voyages. Je suis curieux du monde
+    qui m'entoure, ouvert d’esprit et désireux de tenter de nouvelles expériences.",
+  "overview" : "Apercu de mon CV",
+  "skills" : "Languages pratiqués",
+  "about_me" : "A propos de moi",
+  "name" : "Nom",
+  "birthday" : "Anniversaire",
+  "residence" : "Lieu de résidence",
+  "hobbies" : "Centres d'intérets",
+  "sports" : "Sports et voyages",
+  "other_skills" : "Autres compétences"
+}
