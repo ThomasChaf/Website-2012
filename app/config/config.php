@@ -14,6 +14,7 @@ routes[] = "about"
 routes[] = "raytracer"
 routes[] = "shell42"
 routes[] = "colorPicker"
+routes[] = "modulary"
 
 
 link["facebook"] = "https://www.facebook.com/thomas.chafiol.1"

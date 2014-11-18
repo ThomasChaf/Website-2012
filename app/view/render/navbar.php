@@ -24,7 +24,7 @@
             <li><a href=<?php echo $this->link("shell42") ?>>42sh</a></li>
             <li class="divider"></li>
             <li class="dropdown-header">En dehors de l'école</li>
-            <!-- <li><a href="modulary">Modulary</a></li> -->
+            <li><a href=<?php echo $this->link("modulary") ?>>Modulary</a></li>
             <li><a href=<?php echo $this->link("colorPicker") ?> >Colorpicker</a></li>
           </ul>
         </li>
