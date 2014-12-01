@@ -15,6 +15,9 @@ $this->render("navbar");
 <div class="container-fluid">
   <h1>Modulary</h1>
   <div id="doc" class="row">
+    <!--
+      *  Menu
+      -->
     <div id="index" class="col-md-3">
       <ul>
         <li>
@@ -58,9 +61,12 @@ $this->render("navbar");
         </li>
         <li target="making">Make his own class</li>
         <li target="hineritance">The hineritance</li>
-        </li>
+        <li target="singleton">The singleton</li>
       </ul>
     </div>
+    <!--
+      *  Core
+      -->
     <div id="content" class="col-md-9">
       <div id="configuration">
         <h2>Configuration</h2>
@@ -586,9 +592,9 @@ $this->render("navbar");
             &emsp;<span class="keyword">return</span> (true);
             <br>
             }
+          </div>
         </div>
 
-        </div>
         <div class="code">
           <h2>Template.h</h2>
             <div>
@@ -642,6 +648,76 @@ $this->render("navbar");
           An other example could be find in the Buffer.c file where Buffer hinerit from String.
         </div>
         <hr>
+        <div id="singleton">
+          <h2>The singleton</h2>
+          <div class="code">
+            <h2>Singleton.c</h2>
+            <div>
+              <pre>
+// ****************************************************************************
+//                                                                            *
+//                                    CLASS                                   *
+//                                                                            *
+// ****************************************************************************
+              </pre>
+              char *__SINGLETON = "singleton";
+              <br><br>
+              <span class="comment">/* Add static to simulate the singleton pattern */</span>
+              <br>
+              <span class="keyword">static</span> t_module __Singleton = {&nbsp;&nbsp;sizeof(t_singleton), singleton_ctor, singleton_dtor,
+                <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"singleton",
+                <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;0,
+                <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;0,
+                <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;0,
+                <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;0,
+                <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;0,
+                <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;0
+                <br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;};
+                <br><br>
+
+              <pre>
+// ****************************************************************************
+//                                                                            *
+//                                  SINGLETON                                 *
+//                                                                            *
+// ****************************************************************************
+              </pre>
+                <span class="type">Singleton</span>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="function-name">get_singleton</span>(<span class="type">int</span> <span class="variable-name">ctor</span>, <span class="type">Objet</span> <span class="variable-name">param</span>)
+                <br>
+                {
+                <br>
+                &emsp;<span class="keyword">static</span> <span class="type">Singleton</span>&emsp;<span class="variable-name">singleton</span> = <span class="pointer">NULL</span>;
+                <br>
+                <br>
+                &emsp;<span class="keyword">if</span> (ctor && singleton == <span class="pointer">NULL</span>)
+                <br>
+                &emsp;&emsp;singleton = <span class="keyword">new</span>(__Singleton, path);
+                <br>
+                &emsp;<span class="keyword">else if</span> (!ctor)
+                <br>
+                &emsp;{
+                <br>
+                &emsp;&emsp;<span class="keyword">delete</span>(singleton);
+                <br>
+                &emsp;&emsp;singleton = <span class="pointer">NULL</span>;
+                <br>
+                &emsp;}
+                <br>
+                &emsp;<span class="keyword">return</span> (logger);
+                <br>
+                }
+                <br>
+              </div>
+            </div>
+        </div>
       </div>
     </div>
   </div>

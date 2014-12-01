@@ -11,3 +11,4 @@ all:
 	lessc $(less_path)/colorPicker.less > $(css_path)/colorPicker.css
 	lessc $(less_path)/navbar.less > $(css_path)/navbar.css
 	lessc $(less_path)/doc.less > $(css_path)/doc.css
+	lessc $(less_path)/2048.less > $(css_path)/2048.css
