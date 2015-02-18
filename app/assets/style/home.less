@@ -1,140 +1,141 @@
-// ****************************************************************************
-//                                                                            *
-//                                 HOME LESS                                  *
-//                                                                            *
-// Created by Thomas Chafiol  -  thomaschaf@gmail.com  -  22  /  11  /  2013  *
-// ****************************************************************************
-
+/**
+ *  @file   Home less
+ *
+ *  @brief  @brief
+ *
+ *  @author Thomas Chafiol <thomaschaf@gmail.com>
+ *  @date   22 / 11 / 2013
+ */
 @import "index.less";
 
 #big-navbar {
-  position                          : relative;
-  height                            : 80vh;
-  min-height                        : 430px;
-  overflow                          : hidden;
-  .baner
-  {
-    position                        : relative;
-    background                      : @main-gradient;
-    color                           : white;
-    height                          : 100%;
-    margin                          : 0;
-    padding                         : 0;
-    .description {
-      text-align                    : center;
-      font-size                     : 2 * @font-size;
-      width                         : 100%;
-      height                        : 50%;
-      @media (max-width: @screen-xs) {
-        font-size                   : 2.4rem;
-      }
-      span {
-        position                    : absolute;
-        width                       : 100%;
-        left                        : 0;
-        top                         : 15%;
-      }
-    }
-    div {
-      width                         : 100%;
-      position                      : relative;
-      height                        : 25%!important;
-      @media (max-width: @screen-sm) {
-        height                      : 35%!important;
-      }
-      ul {
-        @media (max-width: @screen-sm) {
-          bottom                    : inherit;
-          margin                    : 0;
-        }
-        bottom                      : 15%;
-        position                    : absolute;
-        width                       : 100%;
-        li {
-          width: 33%;
-          height : 100%;
-          text-align                : center;
-          @media (max-width: @screen-sm) {
-            width                   : inherit;
-            height                  : initial;
-            padding                 : 1%;
-          }
-          a {
-            color                   : white;
-            border                  : 1px solid white;
-            width                   : 240px;
-            margin-left             : auto;
-            margin-right            : auto;
-            background-color        : rgba(0, 0, 0, 0.2);
-            &:hover {
-              background-color      : rgba(0, 0, 0, 0.4);
-              text-decoration       : none;
-            }
-          }
-        }
-      }
-    }
-    .social {
-      width                         : 100%;
-      height                        : 25%!important;
-      ul {
-        position                    : absolute;
-        padding                     : 0;
-        margin                      : 0;
-        top                         : 20%;
-        a {
-          width                     : 20%;
-          text-align                : center;
-          float                     : left;
-          i
-          {
-            font-size               : @font-size;
-            background-color        : rgba(0, 0, 0, 0.2);
-            color                   : white;
-            border                  : 1px solid;
-            padding                 : 25px;
-            -webkit-border-radius   : 50%;
-            -moz-border-radius      : 50%;
-            border-radius           : 50%;
-            margin-right            : 30px;
-            width                   : 70px;
-            height                  : 70px;
-            &:hover
-            {
-              background-color      : rgba(0, 0, 0, 0.4);
-              text-decoration       : none;
-            }
-            &:last-child
-            {
-              margin-right          : 0;
-            }
-          }
-        }
-        a:first-child {
-          width                     : 40%;
-          padding-left              : 30%;
-        }
-        a:last-child {
-          width                     : 40%;
-          padding-right             : 30%;
-        }
-      }
-    }
-  }
+	position                          : relative;
+	height                            : 80vh;
+	min-height                        : 430px;
+	overflow                          : hidden;
+	.baner
+	{
+		position                        : relative;
+		background                      : @main-gradient;
+		color                           : white;
+		height                          : 100%;
+		margin                          : 0;
+		padding                         : 0;
+		.description {
+			text-align                    : center;
+			font-size                     : 2 * @font-size;
+			width                         : 100%;
+			height                        : 50%;
+			@media (max-width: @screen-xs) {
+				font-size                   : 2.4rem;
+			}
+			span {
+				position                    : absolute;
+				width                       : 100%;
+				left                        : 0;
+				top                         : 15%;
+			}
+		}
+		div {
+			width                         : 100%;
+			position                      : relative;
+			height                        : 25%!important;
+			@media (max-width: @screen-sm) {
+				height                      : 35%!important;
+			}
+			ul {
+				@media (max-width: @screen-sm) {
+					bottom                    : inherit;
+					margin                    : 0;
+				}
+				bottom                      : 15%;
+				position                    : absolute;
+				width                       : 100%;
+				li {
+					width: 33%;
+					height : 100%;
+					text-align                : center;
+					@media (max-width: @screen-sm) {
+						width                   : inherit;
+						height                  : initial;
+						padding                 : 1%;
+					}
+					a {
+						color                   : white;
+						border                  : 1px solid white;
+						width                   : 240px;
+						margin-left             : auto;
+						margin-right            : auto;
+						background-color        : rgba(0, 0, 0, 0.2);
+						&:hover {
+							background-color      : rgba(0, 0, 0, 0.4);
+							text-decoration       : none;
+						}
+					}
+				}
+			}
+		}
+		.social {
+			width                         : 100%;
+			height                        : 25%!important;
+			ul {
+				position                    : absolute;
+				padding                     : 0;
+				margin                      : 0;
+				top                         : 20%;
+				a {
+					width                     : 20%;
+					text-align                : center;
+					float                     : left;
+					i
+					{
+						font-size               : @font-size;
+						background-color        : rgba(0, 0, 0, 0.2);
+						color                   : white;
+						border                  : 1px solid;
+						padding                 : 25px;
+						-webkit-border-radius   : 50%;
+						-moz-border-radius      : 50%;
+						border-radius           : 50%;
+						margin-right            : 30px;
+						width                   : 70px;
+						height                  : 70px;
+						&:hover
+						{
+							background-color      : rgba(0, 0, 0, 0.4);
+							text-decoration       : none;
+						}
+						&:last-child
+						{
+							margin-right          : 0;
+						}
+					}
+				}
+				a:first-child {
+					width                     : 40%;
+					padding-left              : 30%;
+				}
+				a:last-child {
+					width                     : 40%;
+					padding-right             : 30%;
+				}
+			}
+		}
+	}
 }
 
 button.navbar-toggle {
-  height                            : 10%;
+	height                            : 10%;
 }
 
 h2 {
-  text-align                        : center;
+	text-align                        : center;
 }
 
 .github {
-  position                          : absolute;
-  top                               : 0;
-  right                             : 0;
-  border                            : 0;
-  z-index                           : 3000;
+	position                          : absolute;
+	top                               : 0;
+	right                             : 0;
+	border                            : 0;
+	z-index                           : 3000;
 }

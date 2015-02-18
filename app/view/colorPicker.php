@@ -1,10 +1,10 @@
 <?php
-// ****************************************************************************
-//                                                                            *
-//                              COLORPICKER PHP                               *
-//                                                                            *
-// Created by Thomas Chafiol  -  thomaschaf@gmail.com  -  26  /  11  /  2013  *
-// ****************************************************************************
+/**
+ *  @file   Colorpicker php
+ *
+ *  @author Thomas Chafiol <thomaschaf@gmail.com>
+ *  @date   26 / 11 / 2013
+ */
 
 $this->css("colorPicker");
 $this->css("navbar");

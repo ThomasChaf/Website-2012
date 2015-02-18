@@ -1,10 +1,10 @@
 <?php
-// ****************************************************************************
-//                                                                            *
-//                               CONDINGAME PHP                               *
-//                                                                            *
-// Created by Thomas Chafiol  -  thomaschaf@gmail.com  -  26  /  11  /  2013  *
-// ****************************************************************************
+/**
+ *  @file   Condingame php
+ *
+ *  @author Thomas Chafiol <thomaschaf@gmail.com>
+ *  @date   26 / 11 / 2013
+ */
 
 $this->begin();
 ?>

@@ -1,48 +1,64 @@
-function Image(context, width, height) {
+/**
+ *  @file   image js
+ *
+ *	@class	Image
+ *  @brief  Use to manipulate pixel from a html canvas
+ *
+ *  @author Thomas Chafiol <thomaschaf@gmail.com>
+ *  @date   26 / 11 / 2013
+ */
+function MImage(context, width, height) {
+	var self = this;
 
-	var ctx = context;
+	self.init = function (context, width, height) {
+		self.context = context;
+		self.width = width;
+		self.height = height;
+		self.imageData = self.context.createImageData(width, height);
+	};
 
-	var imageData = ctx.createImageData(width, height);
+	self.setImageData = function(imageData) {
+		self.imageData = imageData;
+	};
 
-	this.width = width;
+	self.setRGBPixel = function(index, r, g, b) {
+		self.imageData.data[index + 0] = r;
+		self.imageData.data[index + 1] = g;
+		self.imageData.data[index + 2] = b;
+		self.imageData.data[index + 3] = 255;
+	};
 
-	this.height = height;
+	self.getRGBPixel = function(x, y) {
+		var index = (x + y * self.width) * 4,
+				color = [
+					self.imageData.data[index + 0],
+					self.imageData.data[index + 1],
+					self.imageData.data[index + 2],
+					self.imageData.data[index + 3]
+				];
 
-	this.setImageData = function(imageData) {
-		this.imageData = imageData;
-	}
-
-	this.setRGBPixel = function(index, r, g, b) {
-		imageData.data[index + 0] = r;
-		imageData.data[index + 1] = g;
-		imageData.data[index + 2] = b;
-		imageData.data[index + 3] = 255;
-	}
-	
-	this.getRGBPixel = function(x, y) {
-		var index = (x + y * this.width) * 4;
-		var color = [imageData.data[index + 0],
-		             imageData.data[index + 1],
-		             imageData.data[index + 2],
-		             imageData.data[index + 3]
-		];
 		return color;
-	}
+	};
 
-	this.fill = function(r, g, b) {
-		var i = 0;
-		while (i < this.height) {
-			var j = 0;
-			while (j < this.width) {
-				var index = (j + i * this.width) * 4;
-				this.setRGBPixel(index, r, g, b);
+	self.fill = function(r, g, b) {
+		var i = 0,
+				j,
+				index;
+
+		while (i < self.height) {
+			j = 0;
+			while (j < self.width) {
+				index = (j + i * self.width) * 4;
+				self.setRGBPixel(index, r, g, b);
 				j += 1;
 			}
 			i += 1;
 		}
-	}
+	};
 
-	this.putImageData = function(x, y) {
-		ctx.putImageData(imageData, x, y);
-	}
-};
+	self.putImageData = function(x, y) {
+		self.context.putImageData(self.imageData, x, y);
+	};
+
+	self.init(context, width, height);
+}

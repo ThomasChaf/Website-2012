@@ -1,84 +1,85 @@
-// ****************************************************************************
-//                                                                            *
-//                               NAVBAR LESS                                  *
-//                                                                            *
-// Created by Thomas Chafiol  -  thomaschaf@gmail.com  -  30  /  09  /  2014  *
-// ****************************************************************************
-
+/**
+ *  @file   Navbar less
+ *
+ *  @brief  @brief
+ *
+ *  @author Thomas Chafiol <thomaschaf@gmail.com>
+ *  @date   30 / 09 / 2014
+ */
 @import "index.less";
 
 #mini-navbar {
-  background: rgba(46,121,146,1);
-  background: -moz-linear-gradient(left, rgba(46,121,146,1) 0%, rgba(128,210,202,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(46,121,146,1)), color-stop(100%, rgba(128,210,202,1)));
-  background: -webkit-linear-gradient(left, rgba(46,121,146,1) 0%, rgba(128,210,202,1) 100%);
-  background: -o-linear-gradient(left, rgba(46,121,146,1) 0%, rgba(128,210,202,1) 100%);
-  background: -ms-linear-gradient(left, rgba(46,121,146,1) 0%, rgba(128,210,202,1) 100%);
-  background: linear-gradient(to right, rgba(46,121,146,1) 0%, rgba(128,210,202,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e7992', endColorstr='#80d2ca', GradientType=1 );
+	background: rgba(46,121,146,1);
+	background: -moz-linear-gradient(left, rgba(46,121,146,1) 0%, rgba(128,210,202,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(46,121,146,1)), color-stop(100%, rgba(128,210,202,1)));
+	background: -webkit-linear-gradient(left, rgba(46,121,146,1) 0%, rgba(128,210,202,1) 100%);
+	background: -o-linear-gradient(left, rgba(46,121,146,1) 0%, rgba(128,210,202,1) 100%);
+	background: -ms-linear-gradient(left, rgba(46,121,146,1) 0%, rgba(128,210,202,1) 100%);
+	background: linear-gradient(to right, rgba(46,121,146,1) 0%, rgba(128,210,202,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e7992', endColorstr='#80d2ca', GradientType=1 );
 }
 
 .navbar-toggle {
-  margin-right          : 4px;
+	margin-right          : 4px;
 }
 
 .navbar-header {
-  float                 : left;
+	float                 : left;
 }
 
 .navbar-collapse {
-  @media (min-width: @screen-xs) {
-    float               : left;
-  }
+	@media (min-width: @screen-xs) {
+		float               : left;
+	}
 }
 
 .navbar-inverse .navbar-brand {
-  color                 : white;
-  font-weight           : 100;
-  &:hover {
-    color               : #FFF;
-  }
+	color                 : white;
+	font-weight           : 100;
+	&:hover {
+		color               : #FFF;
+	}
 }
 
 .navbar-inverse .navbar-nav>li>a {
-  color                 : white;
-  font-weight           : 100;
-  &:hover {
-    color               : #FFF;
-  }
+	color                 : white;
+	font-weight           : 100;
+	&:hover {
+		color               : #FFF;
+	}
 }
 
 .language {
-  position              : absolute;
-  right                 : 67px;
-  div {
-    ul {
-      border-top-left-radius    : 0;
-      border-top-right-radius   : 0;
-      margin                    : 0;
-      padding                   : 20px 0px 20px 0px;
-      min-width                 : 100px;
-      width                     : 160px;
-      overflow                  : hidden;
-    }
-    img {
-      border            : 1px solid black;
-    }
-    a {
-      display           : inherit;
-      padding           : 13px 5px 13px 5px;
-      color             : white;
-      font-weight       : 200;
-      text-align        : center;
-      &:focus {
-        color           : #fff;
-        background-color: #080808;
-        text-decoration : none;
-      }
-      &:hover {
-        color           : #FFF;
-        text-decoration : none;
-      }
-    }
-  }
+	position              : absolute;
+	right                 : 67px;
+	div {
+		ul {
+			border-top-left-radius    : 0;
+			border-top-right-radius   : 0;
+			margin                    : 0;
+			padding                   : 20px 0px 20px 0px;
+			min-width                 : 100px;
+			width                     : 160px;
+			overflow                  : hidden;
+		}
+		img {
+			border            : 1px solid black;
+		}
+		a {
+			display           : inherit;
+			padding           : 13px 5px 13px 5px;
+			color             : white;
+			font-weight       : 200;
+			text-align        : center;
+			&:focus {
+				color           : #fff;
+				background-color: #080808;
+				text-decoration : none;
+			}
+			&:hover {
+				color           : #FFF;
+				text-decoration : none;
+			}
+		}
+	}
 }
