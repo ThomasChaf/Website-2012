@@ -16,6 +16,7 @@ routes[] = "shell42"
 routes[] = "colorPicker"
 routes[] = "modulary"
 routes[] = "2048"
+routes[] = "bomber"
 
 link["facebook"] = "https://www.facebook.com/thomas.chafiol.1"
 link["twitter"] = "https://twitter.com/ThomasChaf"

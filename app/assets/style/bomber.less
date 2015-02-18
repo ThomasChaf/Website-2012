@@ -1,0 +1,52 @@
+/**
+ *  @file   Bomber less
+ *
+ *  @author Thomas Chafiol <thomaschaf@gmail.com>
+ *  @date   17 / 02 /  2015
+ */
+@import "variables.less";
+
+.bomber {
+	position 					: relative;
+	&.big {
+		height 					: 80vh;
+		.endGame div {
+			margin-top		: 200px;
+		}
+	}
+	&.small {
+		height 					: 200px;
+		.endGame div {
+			margin-top		: 75px;
+		}
+	}
+	background-color 	: @black;
+
+	canvas {
+		background-color : @grey;
+	}
+
+	.endGame {
+		position 					: absolute;
+		width 						: 100%;
+		height 						: 100%;
+		top								: 0;
+		left							: 0;
+		margin						: 0;
+		padding						: 0;
+		background-color	: rgba(255, 255, 255, 0.41);
+		color							: @black;
+
+		div {
+			border						: 2px solid black;
+			background-color	: white;
+			padding						: 15px;
+			text-align				: center;
+
+			button {
+				margin-top			: 10px;
+				width 					: 200px;
+			}
+		}
+	}
+}
